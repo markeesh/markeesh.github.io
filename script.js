@@ -2,19 +2,15 @@ var can = document.getElementById('canvas1');
 var ctx = can.getContext('2d');
 
 ctx.lineWidth = 5;
-
-// linear gradient from start to end of line
 var grad= ctx.createLinearGradient(50, 50, 150, 325);
 grad.addColorStop(0, "blue");
 grad.addColorStop(0.5, "purple");
 grad.addColorStop(1, "yellow");
 
 ctx.strokeStyle = grad;
-
 ctx.beginPath();
 ctx.moveTo(0,0);
 ctx.lineTo(1500,0);
-
 ctx.stroke();
 
 function rotateFunction(){
